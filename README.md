@@ -18,21 +18,19 @@
 
 ### 配置数据库地址
 
-修改module-paser-base模块中resources文件夹内的配置文件，配置数据库地址链接上本地任意空的数据库即可，无需建立表格，项目运行后会自动建表。
+在application.yml中配置数据库地址
 
 
 
 ### 配置端口号
 
-修改module-paser-manage模块中config文件内配置文件，配置端口号。
+application.yml中配置端口号。
 
 
 
 
 
 ### 运行
-
-- 需要在module-paser-manage模块设置中，把module-paser-base模块添加到依赖中。
 
 - 构建项目
 - 运行module-paser-mange模块的application启动类
