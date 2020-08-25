@@ -46,7 +46,7 @@ application.yml中配置端口号。
 - URL：
 
   ```http
-  http://localhost:端口号/rating9/system/module-paser-manage/0.0.1-SNAPSHOT/scanPom
+  http://localhost:端口号/mp/scanPom
   ```
 
 - 入参：
@@ -66,7 +66,7 @@ application.yml中配置端口号。
 - URL：
 
   ```http
-  http://localhost:端口号/rating9/system/module-paser-manage/0.0.1-SNAPSHOT/getLevel
+  http://localhost:端口号/mp/getLevel
   ```
 
 - 入参：
@@ -89,7 +89,7 @@ application.yml中配置端口号。
 - URL：
 
   ```http
-  http://localhost:端口号/rating9/system/module-paser-manage/0.0.1-SNAPSHOT/findByLevel
+  http://localhost:端口号/mp/findByLevel
   ```
 
 - 入参：
@@ -113,7 +113,7 @@ application.yml中配置端口号。
 - URL：
 
   ```http
-  http://localhost:端口号/rating9/system/module-paser-manage/0.0.1-SNAPSHOT/findDependencies
+  http://localhost:端口号/mp/findDependencies
   ```
 
 - 入参：
