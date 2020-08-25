@@ -33,15 +33,11 @@ application.yml中配置端口号。
 ### 运行
 
 - 构建项目
-- 运行module-paser-mange模块的application启动类
+- 运行application启动类
 
 
 
 ## 接口
-
-运行项目后可在浏览器中输入`http://localhost:你配置的端口号/swagger-ui.html#/`即可查看所有接口以及入参
-
-
 
 ### 扫描项目全局pom文件
 
