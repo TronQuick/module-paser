@@ -53,10 +53,9 @@ application.yml中配置端口号。
 
   ```json
   {  "projectPath": "项目路径"}
+  ```
   注意：使用扫描项目全局pom文件接口时，输入路径请使用【/】斜划线，
   如C:/user/tron/desktop/project，在文件浏览器中复制出来的路径使用的可能会是【\】，请修改为【/】后再提交请求！
-  ```
-
   
 
 
