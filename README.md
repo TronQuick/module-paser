@@ -47,7 +47,7 @@ application.yml中配置端口号。
 
 ## 接口测试
 
-将项目中的【module-paser_0.1.postman_collection】文件导入到postmen中，读取测试接口
+将项目中的【module-paser_0.1.postman_collection】文件导入到postmen中
 
 
 
