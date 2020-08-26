@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "3f5a7d17-91d2-4487-8a0a-42d9872cc6f3",
+		"name": "module-paser_0.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "扫描项目全局pom文件",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectPath\": \"C:/Users/Administrator/Desktop/PomParser/pomPaserTest\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp/scanPom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"scanPom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "指定模块名称、版本号，获取上级层级总级数",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"artifactid\": \"utils\",\r\n  \"version\": \"0.0.1-SNAPSHOT\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp/getLevel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"getLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "指定模块名称、版本号，查询所有上级依赖模块",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"artifactid\": \"utils\",\r\n  \"version\": \"0.0.1-SNAPSHOT\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp/findUpModules",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"findUpModules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "根据指定模块名称、版本号、上级依赖层级级数，获取指定的上级依赖模块",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"artifactid\": \"utils\",\r\n  \"version\": \"0.0.1-SNAPSHOT\",\r\n  \"level\": 4\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp/findByLevel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"findByLevel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
